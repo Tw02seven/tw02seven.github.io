@@ -1,0 +1,155 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    color: #1a1a1a;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 0 0 8px;
+}
+
+h2 {
+    font-size: 20px;
+    margin: 32px 0 12px;
+}
+
+a {
+    color: #2f5fe0;
+}
+
+img {
+    border-radius: 8px;
+}
+
+input {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+button {
+    padding: 8px 16px;
+    background: #2f5fe0;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 400px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: -6px;
+}
+
+input {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    align-self: flex-start;
+}
+
+.layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    padding: 0 24px;
+}
+
+.side {
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.side nav {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+main {
+    flex: 1;
+    min-width: 0;
+}
+
+@media(max-width:720px) {
+    .layout {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+    gap: 16px;
+}
+.card{
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: #f7f7f7;
+    padding: 12px 0;
+    z-index: 10;
+}
+
+.modal{display: none;}
+
+.modal:target{
+    display: flex;
+    position: fixed;
+    inset:0;
+    background: rgba(0, 0, 0, 0.5);
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal-box{
+    background: #fff;
+    padding: 24px;
+    border-radius: 12px;
+}
+
+a:hover{color: #1a3fb0;}
+
+button:hover{background: #1a3fb0;}
+
+.card{
+    transition: box-shadow 0.2s,transform 0.2s;
+}
+
+.card:hover{
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+section{margin-bottom: 32px;}

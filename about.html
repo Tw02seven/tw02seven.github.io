@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Tw02seven</h1>
+    </header>
+    <div class="layout">
+        <aside class="side">
+            <nav>
+                <a href="#works">在做的事</a>
+                <a href="#contact">联系我</a>
+            </nav>
+        </aside>
+        <main>
+            <section id="about">
+                <P>福州大学设计学类大一，在学平面设计。</P>
+                <img src="头像.jpg" alt="我的头像" width="120">
+            </section>
+
+            <section id="works">
+                <h2>在做的事</h2>
+                <ul>
+                    <li>临摹 App 页面</li>
+                    <li>学 HTML 和 CSS</li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>联系我</h2>
+                <form>
+                    <label for="name">名字</label>
+                    <input id="name" type="text" placeholder="怎么称呼">
+
+                    <label for="email">邮箱</label>
+                    <input id="email" type="email" placeholder="you@example.com">
+
+                    <button type="submit">发送</button>
+                </form>
+            </section>
+
+            <section id="cards">
+                <h2>作品</h2>
+                <div class="cards">
+                    <div class="card">
+                        <h3>今日一句</h3>
+                        <p>第一张Figma卡片</p>
+                    </div>
+                    <div class="card">
+                        <h3>DSH弹窗</h3>
+                        <p>临摹组件</p>
+                    </div>
+                    <div class="card">
+                        <h3>关于页</h3>
+                        <p>这页HTML</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <a href="#dialog">打开弹窗</a>
+
+    <div id="dialog" class="modal">
+        <div class="modal-box">
+            <h2>联系我</h2>
+            <p>这是我第一个纯 CSS 弹窗。</p>
+            <a href="#" class="close">关闭</a>
+        </div>
+    </div>
+
+
+    <footer>
+        <p>@ 2026 Tw02seven</p>
+    </footer>
+</body>
